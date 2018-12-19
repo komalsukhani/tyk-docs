@@ -1,8 +1,8 @@
 {{ define "content" }}
 <div id="swagger-ui"></div>
-<link rel="stylesheet" type="text/css" href="https://unpkg.com/swagger-ui-dist@3.12.1/swagger-ui.css">
-<script src="https://unpkg.com/swagger-ui-dist@3.12.1/swagger-ui-standalone-preset.js"></script>
-<script src="https://unpkg.com/swagger-ui-dist@3.12.1/swagger-ui-bundle.js"></script>
+<link rel="stylesheet" type="text/css" href="https://unpkg.com/swagger-ui-dist@3.20.3/swagger-ui.css">
+<script src="https://unpkg.com/swagger-ui-dist@3.20.3/swagger-ui-standalone-preset.js"></script>
+<script src="https://unpkg.com/swagger-ui-dist@3.20.3/swagger-ui-bundle.js"></script>
 <script>
 const DisableTryItOutPlugin = function() {
   return {
@@ -32,8 +32,8 @@ var ui = SwaggerUIBundle({
       SwaggerUIBundle.presets.apis
     ],
     plugins: [
-        DisableTryItOutPlugin, 
-        DisableAuthorizePlugin,
+        // DisableTryItOutPlugin,
+        // DisableAuthorizePlugin,
         SwaggerUIBundle.plugins.DownloadUrl
     ]
   })
@@ -41,7 +41,7 @@ var ui = SwaggerUIBundle({
   document.querySelector(".page-content.wysiwyg").className = "page-content"
 </script>
 <style>
-.swagger-ui .base-url, .swagger-ui .scheme-container, .swagger-ui .title small { display: none !important }
+.swagger-ui .base-url, .swagger-ui .scheme-container, .swagger-ui .title small, .swagger-ui .global-server-container { display: none !important }
 
 .swagger-ui .info { margin: 0 !important }
 
@@ -61,10 +61,6 @@ var ui = SwaggerUIBundle({
 
 .swagger-ui .info p, .swagger-ui .info li {
   font-size: 16px;
-}
-
-.swagger-ui .global-server-container {
-  display: none;
 }
 
 .swagger-ui .wrapper {
