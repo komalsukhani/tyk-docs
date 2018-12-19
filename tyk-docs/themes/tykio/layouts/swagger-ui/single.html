@@ -52,6 +52,70 @@ var ui = SwaggerUIBundle({
 .page-content > h1 {
     display: none;
 }
+
+.swagger-ui * {
+  font-family: 'Roboto', sans-serif !important;
+  line-height: 1.5;
+  letter-spacing: 0.015em;
+}
+
+.swagger-ui .info p, .swagger-ui .info li {
+  font-size: 16px;
+}
+
+.swagger-ui .global-server-container {
+  display: none;
+}
+
+.swagger-ui .wrapper {
+  margin-top: 3em;
+}
+
+.swagger-ui h4.opblock-tag {
+  flex-direction: column;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  padding-left: 0;
+  cursor: default;
+
+  position: relative;
+}
+
+.swagger-ui h4 > a:last-child  {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+.swagger-ui .opblock-tag small {
+  padding: 0;
+}
+
+.swagger-ui .expand-operation {
+  display: none;
+}
+
+.swagger-ui .parameters tbody td {
+  padding-right: 1em !important;
+}
+
+.swagger-ui .parameters p {
+  font-size: 14px;
+}
+
+.swagger-ui .models {
+  display: none;
+}
+
+.swagger-ui .info .title {
+    margin-bottom: 26px;
+    font-size: 48px;
+    font-family: 'smoolthan' !important;
+    font-weight: bold;
+    color: #000;
+}
+
+
 </style>
 
 {{ end }}
