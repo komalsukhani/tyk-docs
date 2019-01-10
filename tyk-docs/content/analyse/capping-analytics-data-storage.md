@@ -45,7 +45,7 @@ curl --header "x-tyk-authorization: {tyk-gateway-secret}" --header "content-type
 }
 ```
 
-`data_expires` - Set the data expires to a time in seconds for it to expire. Tyk will calculate the expiry date for you.
+`data_expires` - Sets the data expires to a time in seconds for it to expire. Tyk will calculate the expiry date for you.
 
 ### Step 3: Make Sure the Setting is Enabled in `tyk.conf`
 
